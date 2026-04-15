@@ -27,6 +27,11 @@ def reviews_data_dir() -> Path:
     return project_root() / "data" / "reviews"
 
 
+def processed_data_dir() -> Path:
+    """Saídas derivadas (scrape consolidado opcional, ABSA): `data/processed/`."""
+    return project_root() / "data" / "processed"
+
+
 def shein_json_path() -> Path:
     """Arquivo único com reviews Shein agrupadas por pilar."""
     return reviews_data_dir() / "shein.json"

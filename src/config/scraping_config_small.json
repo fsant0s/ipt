@@ -1,0 +1,42 @@
+{
+  "company": "shein",
+  "base_url": "https://www.reclameaqui.com.br/empresa/shein/lista-reclamacoes/?busca={query}&pagina=1",
+  "scrape_run": {
+    "mode": "full",
+    "full": {
+      "max_links_per_query": 1
+    }
+  },
+  "pillars": {
+    "qualidade_produto": {
+      "enabled": true,
+      "queries": [
+        "tecido ruim"
+      ]
+    },
+    "ajuste_caimento": {
+      "enabled": true,
+      "queries": [
+        "tamanho errado"
+      ]
+    },
+    "logistica_entrega": {
+      "enabled": true,
+      "queries": [
+        "atraso entrega"
+      ]
+    },
+    "atendimento_cliente": {
+      "enabled": true,
+      "queries": [
+        "atendimento ruim"
+      ]
+    },
+    "general_collection": {
+      "enabled": true,
+      "queries": [
+        "shein"
+      ]
+    }
+  }
+}

@@ -2,6 +2,8 @@
 
 Pipeline completo de **Aspect-Based Sentiment Analysis (ABSA)** para reviews da Shein coletadas no Reclame Aqui. O sistema cobre desde a raspagem dos textos até a geração de um JSON estruturado por aspecto, com sentimento, confiança do modelo e uma frase de resumo em português.
 
+**CLI:** o scraper (`src.scraping.scraper`) e o lote ABSA (`scripts/run_shein_absa.py`) **exigem sempre** `-i` e `-o` (ficheiros de entrada e saída). Não há execução sem estes parâmetros.
+
 ---
 
 ## Visão geral do fluxo
@@ -10,7 +12,7 @@ Pipeline completo de **Aspect-Based Sentiment Analysis (ABSA)** para reviews da 
 Reclame Aqui
     │  Playwright (headless browser)
     ▼
-data/reviews/shein.json          ← reviews brutas agrupadas por pilar
+data/reviews/<reviews.json>      ← saída do scraper (-o) e entrada típica do ABSA (-i)
     │  sample_reviews_per_pillar()
     ▼
 texto PT-BR  ──► ChatGPT (gpt-4o-mini)  ──► texto EN
@@ -24,7 +26,7 @@ texto PT-BR  ──► ChatGPT (gpt-4o-mini)  ──► texto EN
                             (tradução PT + pilar + resumo)
                                                 │
                                                 ▼
-                             data/processed/shein_absa.json
+                             data/processed/<saida_absa.json>   ← caminho em -o no run_shein_absa
 ```
 
 ---
@@ -69,9 +71,9 @@ OPENAI_API_KEY=sk-...
 ipt/
 ├── data/
 │   ├── reviews/
-│   │   └── shein.json              ← reviews coletadas pelo scraper
+│   │   └── shein.json              ← scrape: -i / -o (merge); ABSA: -i típico
 │   └── processed/
-│       └── shein_absa.json         ← saída final do pipeline ABSA
+│       └── shein_absa.json         ← saída do ABSA (-o)
 ├── checkpoints/
 │   └── ATEPC_MULTILINGUAL_CHECKPOINT/  ← modelo PyABSA (DeBERTa multilingual)
 ├── scripts/
@@ -79,7 +81,8 @@ ipt/
 ├── src/
 │   ├── scraping/
 │   │   ├── scraper.py              ← web scraping (Playwright + Reclame Aqui)
-│   │   └── scraping_config.json    ← pilares e queries de busca
+│   │   ├── scraping_config_full.json   ← pilares e queries (default do scraper)
+│   │   └── scraping_config_small.json  ← config reduzida para testes
 │   ├── processing/
 │   │   ├── shein_absa_pipeline.py  ← pipeline único (tradução + PyABSA + GPT)
 │   │   ├── pyabsa_multilingual.py  ← wrapper PyABSA (extração de aspectos)
@@ -103,9 +106,9 @@ O scraper usa **Playwright** (navegador Chromium headless) para:
    `https://www.reclameaqui.com.br/empresa/shein/lista-reclamacoes/?busca={query}`
 2. Extrair os links das reclamações listadas.
 3. Entrar em cada reclamação e coletar o **título** e o **texto do consumidor** (a resposta da empresa é automaticamente removida).
-4. Mesclar com o arquivo existente (`data/reviews/shein.json`), sem duplicar pelo título.
+4. Mesclar com o estado anterior (lê a base em `-i` ou o ficheiro de `-o` já gravado entre queries, ambos em `data/reviews/` se relativo), sem duplicar pelo título.
 
-### Configuração (`src/config/scraping_config.json`)
+### Configuração (`src/config/scraping_config_full.json`)
 
 Cada pilar tem uma lista de `queries` de busca no Reclame Aqui:
 
@@ -119,11 +122,26 @@ Cada pilar tem uma lista de `queries` de busca no Reclame Aqui:
 
 ### Executar o scraper
 
+**Obrigatório:** `-i` e `-o` (ambos em `data/reviews/` se caminho relativo). Opcional: `-c` (config de scraping; se omitido, usa `src/config/scraping_config_full.json`).
+
+O pipeline ABSA (`run_shein_absa.py`) grava só em **`data/processed/`** (`-o`).
+
 ```bash
-uv run python -m src.scraping.scraper
+# Config completa (default interno): merge e saída em data/reviews/shein.json
+uv run python -m src.scraping.scraper -i shein.json -o shein.json
+
+# Ficheiros distintos
+uv run python -m src.scraping.scraper -i shein.json -o shein_raspado.json
 ```
 
-Saída gravada em `data/reviews/shein.json` com estrutura:
+Se `--output` já existir na mesma execução (várias queries), o merge usa esse ficheiro; na primeira vez, se a saída não existir, carrega a base de `--input` (em `data/reviews/`).
+
+```bash
+# Config reduzida + nomes explícitos
+uv run python -m src.scraping.scraper -c src/config/scraping_config_small.json -i shein_small.json -o shein_small.json
+```
+
+Saída gravada em `data/reviews/` no ficheiro passado em `-o`, com estrutura:
 
 ```json
 {
@@ -178,19 +196,24 @@ Os aspectos extraídos são enviados ao `gpt-4o-mini` numa única chamada. O mod
 
 ## Execução em lote
 
+**Obrigatório:** `-i` (JSON com `pillars`: `data/reviews/` ou, se não existir aí, `data/processed/`) e `-o` (lista ABSA em `data/processed/`). Opcionais: `-n` (default `3`), `--seed` (default `42`).
+
 ```bash
-# 3 reviews por pilar (default), seed 42
-uv run python scripts/run_shein_absa.py
+# 3 reviews por pilar, seed 42 (defaults de -n e --seed)
+uv run python scripts/run_shein_absa.py -i shein.json -o shein_absa.json
+
+# Dataset pequeno + ficheiro de saída próprio
+uv run python scripts/run_shein_absa.py -i shein_small.json -o shein_absa_small.json
 
 # 5 reviews por pilar, outra seed
-uv run python scripts/run_shein_absa.py -n 5 --seed 7
+uv run python scripts/run_shein_absa.py -i shein.json -o shein_absa.json -n 5 --seed 7
 
-# 1 review por pilar (mínimo para teste)
-uv run python scripts/run_shein_absa.py -n 1
+# 1 review por pilar (teste rápido)
+uv run python scripts/run_shein_absa.py -i shein.json -o shein_absa.json -n 1
 ```
 
 Cada execução:
-- Carrega a lista existente em `data/processed/shein_absa.json`
+- Carrega ou cria a lista no ficheiro indicado em **`-o`**
 - **Deduplicação**: se a mesma review já existe (pelo texto normalizado), substitui o registro em vez de duplicar
 - Imprime no terminal `added` (nova) ou `replaced` (atualizada) e o total acumulado
 - Grava o arquivo atualizado após cada review processada (progresso não se perde em caso de erro)
@@ -221,9 +244,9 @@ O notebook exibe:
 
 ---
 
-## Saída — `data/processed/shein_absa.json`
+## Saída ABSA (`-o`)
 
-O arquivo é uma **lista JSON** (array na raiz). Cada elemento representa uma review processada.
+O ficheiro definido em **`-o`** (sempre sob `data/processed/` se o caminho for relativo) é uma **lista JSON** (array na raiz). Cada elemento representa uma review processada.
 
 ### Estrutura de um elemento
 

@@ -1,0 +1,202 @@
+[
+  {
+    "texto_original": "Corta Vento: Impossibilidade de Devolução de Produto com Tecido Ruim e Não Conformidade com Expectativas. Fiz uma compra desse corta vento, em momento algum foi detalhado na compra que ele não poderia ser devolvido. Recebi o produto ontem e para minha surpresa o tecido era ruim e não atendeu as minhas expectativas. Entrei então no site da marca para realizar a devolução de uma compra que é on-line. Com isso tive a infeliz surpresa que eles não recebem devolução do produto, isso é uma violação aos direitos do consumidor.",
+    "aspectos": [
+      {
+        "aspecto_detectado": "Tecido",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9958,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O tecido do corta vento é considerado ruim e não atendeu às expectativas do consumidor."
+      },
+      {
+        "aspecto_detectado": "Corta Vento",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.8649,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O consumidor fez uma compra do corta vento, mas teve problemas com a devolução."
+      },
+      {
+        "aspecto_detectado": "Devoluções",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9954,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O consumidor ficou insatisfeito ao descobrir que a marca não aceita devoluções do produto."
+      }
+    ]
+  },
+  {
+    "texto_original": "Reclamação sobre devolução e reembolso de pedido na Shein - Peça com tamanho incorreto e item enviado errado. Comprei uma roupa na Shein (pedido #*****), mas infelizmente uma peça o tamanho não serviu, e a outra a própria shein fez o envio diferente do que pedi. Solicitei a devolução pelo próprio sistema da Shein no dia 08/04/2026, e dois dias após eu levei o pacote ao Correio de acordo com a Shein.Isso é muito frustrante, pois o reembolso já costuma demorar, e agora com essa falta de atualização o processo fica ainda mais enrolado. Estou esperando pelo valor de R$113,26 de volta, e é injusto ter que ficar correndo atrás por algo que já fiz corretamente.Peço que a Shein atualize urgentemente o status da devolução no sistema e acelere o processo de reembolso.",
+    "aspectos": [
+      {
+        "aspecto_detectado": "tamanho",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9943,
+        "pilar": "ajuste_caimento",
+        "resumo_aspecto": "O tamanho da peça não serviu, causando frustração ao consumidor."
+      },
+      {
+        "aspecto_detectado": "modelagem",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9925,
+        "pilar": "ajuste_caimento",
+        "resumo_aspecto": "A modelagem da roupa enviada estava errada, diferente do que foi pedido."
+      }
+    ]
+  },
+  {
+    "texto_original": "Atraso na entrega de pedido internacional com urgência para viagem. Fiz uma compra na shein no dia 29 de Março e a entrega deveria estava prevista entre os dias 11 à 18 de abril, houve um ATRASO no voo e isso causou um retardo enorme na entrega, meu pedido chegou no brasil antes de ontem e ate agora nada de se movimentar, ONTEM N HOUVE NENHUMA ATUALIZAÇÃO, preciso desse pedido na minha casa urgentemente, pois irei viajar dia 17 na parte da manhã! O pedido ja esta no brasil e nada de agilizar entrei em contato pela shein pedindo que considerassem a entrega urgente mas o trabalho em si é da transportadora em agilizar esse processo e não deixar minha encomenda parada! Deixando claro que ja passou 3 dias do prazo inicial e nenhuma movimentação foi feita!\nNúmero do pedido: *****\nCódigo de rastreio: *****\n\nEspero de verdade que solucionem meu problema preciso da minha encomenda o mais rápido possível",
+    "aspectos": [
+      {
+        "aspecto_detectado": "entrega",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9957,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "Houve um atraso significativo na entrega do pedido, que deveria ser urgente."
+      },
+      {
+        "aspecto_detectado": "entrega",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.5163,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O pedido chegou ao Brasil, mas não houve movimentação desde então."
+      },
+      {
+        "aspecto_detectado": "atualização",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9901,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "Não houve nenhuma atualização sobre o status do pedido."
+      },
+      {
+        "aspecto_detectado": "pedido",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.9867,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O consumidor precisa do pedido com urgência para uma viagem."
+      },
+      {
+        "aspecto_detectado": "transportadora",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.6146,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "A responsabilidade de agilizar a entrega é da transportadora, que não está cumprindo."
+      },
+      {
+        "aspecto_detectado": "prazo",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9466,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O prazo inicial já foi ultrapassado em 3 dias sem movimentação."
+      },
+      {
+        "aspecto_detectado": "Pedido",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.683,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O número do pedido foi mencionado, mas sem sentimento associado."
+      },
+      {
+        "aspecto_detectado": "código de rastreio",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.5173,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O código de rastreio foi fornecido, mas não há sentimento expresso sobre ele."
+      }
+    ]
+  },
+  {
+    "texto_original": "Itens Faltando no Pedido e Dificuldades no Atendimento e Devolução - Ordem *****. Realizei uma compra no site da Shein e, ao receber o pedido, identifiquei que vieram itens faltando.\n\nDesde então, tentei contato com o atendimento da empresa diversas vezes, porém o suporte é extremamente ruim. Não recebo retorno claro sobre o meu caso, e quando respondem, não resolvem o problema.\n\nAlém disso, ao tentar solicitar a devolução, enfrento outra dificuldade: não existe transportadora disponível próxima à minha região, o que impossibilita o processo. Ou seja, além de não receber todos os itens, também não consigo exercer meu direito de devolução de forma adequada.\n\nMe sinto totalmente prejudicada como consumidora, pela falta de compromisso, suporte ineficiente e ausência de soluções práticas.\n\nSolicito uma posição urgente da empresa, com a resolução do problema seja o envio dos itens faltantes ou o reembolso dos valores pagos, de forma acessível e sem mais transtornos.\n\nOrdem:*****",
+    "aspectos": [
+      {
+        "aspecto_detectado": "Atendimento ao Cliente",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9965,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O atendimento ao cliente é extremamente ruim e não oferece soluções claras."
+      },
+      {
+        "aspecto_detectado": "itens",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9925,
+        "pilar": "general_collection",
+        "resumo_aspecto": "Faltaram itens no pedido, prejudicando a experiência de compra."
+      },
+      {
+        "aspecto_detectado": "atendimento ao cliente",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.6112,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O atendimento ao cliente foi contatado diversas vezes, mas sem sucesso."
+      },
+      {
+        "aspecto_detectado": "suporte",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9799,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O suporte é ineficiente e não resolve os problemas apresentados."
+      },
+      {
+        "aspecto_detectado": "retorno",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9909,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "Não recebo retorno claro sobre o meu caso, o que gera frustração."
+      },
+      {
+        "aspecto_detectado": "transportadora",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9917,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "Não há transportadora disponível na minha região para a devolução."
+      },
+      {
+        "aspecto_detectado": "envio",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9933,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O envio dos itens faltantes não foi realizado, causando insatisfação."
+      },
+      {
+        "aspecto_detectado": "Ordem",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.3961,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A ordem foi mencionada, mas não traz informações adicionais relevantes."
+      }
+    ]
+  },
+  {
+    "texto_original": "Não resolveram meu problema. Fiz uma reclamação e me chamaram em um chat privado, expliquei a situação problemática no app Shein e enviei o endereço correto.\n\nResultado: falaram hoje, por volta de 6h da manhã, que encaminharam para o \"centro logístico\"\n\nHoje mesmo, 12h33, a notificação de \"entrega falhou\" apareceu novamente. Mudaram o endereço do sistema que está errado pelo correto que apresentei? Não. Arrumaram o app? Não. Resolveram meu problema? Não.",
+    "aspectos": [
+      {
+        "aspecto_detectado": "endereço",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.4796,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O consumidor enviou o endereço correto, mas não houve confirmação de que foi alterado no sistema."
+      },
+      {
+        "aspecto_detectado": "logística",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.7614,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O problema foi encaminhado para o centro logístico, mas não houve solução."
+      },
+      {
+        "aspecto_detectado": "entrega",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9951,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "A notificação de 'entrega falhou' apareceu novamente, indicando que o problema persiste."
+      },
+      {
+        "aspecto_detectado": "endereço do sistema",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.6666,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O endereço no sistema não foi corrigido, permanecendo o erro apresentado pelo consumidor."
+      }
+    ]
+  }
+]

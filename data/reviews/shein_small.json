@@ -1,0 +1,49 @@
+{
+  "pillars": {
+    "qualidade_produto": {
+      "pillar_label": "Qualidade do Produto",
+      "reviews": [
+        {
+          "title": "Corta Vento: Impossibilidade de Devolução de Produto com Tecido Ruim e Não Conformidade com Expectativas",
+          "review": "Fiz uma compra desse corta vento, em momento algum foi detalhado na compra que ele não poderia ser devolvido. Recebi o produto ontem e para minha surpresa o tecido era ruim e não atendeu as minhas expectativas. Entrei então no site da marca para realizar a devolução de uma compra que é on-line. Com isso tive a infeliz surpresa que eles não recebem devolução do produto, isso é uma violação aos direitos do consumidor.\n\n[Resposta da empresa]\n10"
+        }
+      ]
+    },
+    "ajuste_caimento": {
+      "pillar_label": "Ajuste e Caimento",
+      "reviews": [
+        {
+          "title": "Reclamação sobre devolução e reembolso de pedido na Shein - Peça com tamanho incorreto e item enviado errado",
+          "review": "Comprei uma roupa na Shein (pedido #*****), mas infelizmente uma peça o tamanho não serviu, e a outra a própria shein fez o envio diferente do que pedi. Solicitei a devolução pelo próprio sistema da Shein no dia 08/04/2026, e dois dias após eu levei o pacote ao Correio de acordo com a Shein.Isso é muito frustrante, pois o reembolso já costuma demorar, e agora com essa falta de atualização o processo fica ainda mais enrolado. Estou esperando pelo valor de R$113,26 de volta, e é injusto ter que ficar correndo atrás por algo que já fiz corretamente.Peço que a Shein atualize urgentemente o status da devolução no sistema e acelere o processo de reembolso.\n\n[Resposta da empresa]\nOlá,\n\nRecebemos a sua reclamação em reclameaqui e estamos sempre dispostos em servi-lo. Já enviamos uma mensagem privada aqui.\n\nEste é um serviço de atendimento ao cliente individual. Cada reclamação será tratada por apenas um representante de atendimento ao cliente. Resolveremos o seu problema ativamente. Para garantir a qualidade do serviço, precisamos de um tempo para analisar e investigar seu problema, portanto, o tempo de resposta geralmente é de 1 a 3 dias. Agradecemos sua compreensão e paciência.\n\nPor favor, verifique se recebeu uma notificação via email e pode entrar em contactar connosco pelo acesso de lá.\n\nOu também pode acessar a área do Consumidor da sua conta de Reclameaqui (localizado no canto superior da tela);\n* Clique em minhas reclamações e selecione a específica,\n* Clique em \"Visualizar mensagens\".\n\nEsperamos o seu feedback em breve."
+        }
+      ]
+    },
+    "logistica_entrega": {
+      "pillar_label": "Logística de Entrega",
+      "reviews": [
+        {
+          "title": "Atraso na entrega de pedido internacional com urgência para viagem",
+          "review": "Fiz uma compra na shein no dia 29 de Março e a entrega deveria estava prevista entre os dias 11 à 18 de abril, houve um ATRASO no voo e isso causou um retardo enorme na entrega, meu pedido chegou no brasil antes de ontem e ate agora nada de se movimentar, ONTEM N HOUVE NENHUMA ATUALIZAÇÃO, preciso desse pedido na minha casa urgentemente, pois irei viajar dia 17 na parte da manhã! O pedido ja esta no brasil e nada de agilizar entrei em contato pela shein pedindo que considerassem a entrega urgente mas o trabalho em si é da transportadora em agilizar esse processo e não deixar minha encomenda parada! Deixando claro que ja passou 3 dias do prazo inicial e nenhuma movimentação foi feita!\nNúmero do pedido: *****\nCódigo de rastreio: *****\n\nEspero de verdade que solucionem meu problema preciso da minha encomenda o mais rápido possível"
+        }
+      ]
+    },
+    "atendimento_cliente": {
+      "pillar_label": "Atendimento ao Cliente",
+      "reviews": [
+        {
+          "title": "Itens Faltando no Pedido e Dificuldades no Atendimento e Devolução - Ordem *****",
+          "review": "Realizei uma compra no site da Shein e, ao receber o pedido, identifiquei que vieram itens faltando.\n\nDesde então, tentei contato com o atendimento da empresa diversas vezes, porém o suporte é extremamente ruim. Não recebo retorno claro sobre o meu caso, e quando respondem, não resolvem o problema.\n\nAlém disso, ao tentar solicitar a devolução, enfrento outra dificuldade: não existe transportadora disponível próxima à minha região, o que impossibilita o processo. Ou seja, além de não receber todos os itens, também não consigo exercer meu direito de devolução de forma adequada.\n\nMe sinto totalmente prejudicada como consumidora, pela falta de compromisso, suporte ineficiente e ausência de soluções práticas.\n\nSolicito uma posição urgente da empresa, com a resolução do problema seja o envio dos itens faltantes ou o reembolso dos valores pagos, de forma acessível e sem mais transtornos.\n\nOrdem:*****\n\n[Resposta da empresa]\nOlá,Tudo bem?\n\nPeço sinceras desculpas pelo transtorno. Na SHEIN sempre queremos oferecer boas experiências para todos os nossos clientes e, por esse motivo, sua satisfação é nossa prioridade.\n\nApós a verificação, nosso agente tratou do seu problema. Se você tiver outras dúvidas, você pode entrar em contato conosco a qualquer momento.\n\nSe você estiver satisfeito com nosso serviço, você se dará ao trabalho de nos dar uma nova classificação para compartilhar sua experiência de compra? Muito obrigada. Damos grande importância às opiniões valiosas de cada usuário e esperamos sua participação!\n\nAtenciosamente,\nEquipe SHEIN"
+        }
+      ]
+    },
+    "general_collection": {
+      "pillar_label": "Coleta Geral",
+      "reviews": [
+        {
+          "title": "Não resolveram meu problema",
+          "review": "Fiz uma reclamação e me chamaram em um chat privado, expliquei a situação problemática no app Shein e enviei o endereço correto.\n\nResultado: falaram hoje, por volta de 6h da manhã, que encaminharam para o \"centro logístico\"\n\nHoje mesmo, 12h33, a notificação de \"entrega falhou\" apareceu novamente. Mudaram o endereço do sistema que está errado pelo correto que apresentei? Não. Arrumaram o app? Não. Resolveram meu problema? Não."
+        }
+      ]
+    }
+  }
+}

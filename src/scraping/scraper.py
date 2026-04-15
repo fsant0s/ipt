@@ -1,3 +1,4 @@
+import argparse
 import json
 import urllib.parse
 from pathlib import Path
@@ -5,13 +6,24 @@ from pathlib import Path
 from loguru import logger
 from playwright.sync_api import sync_playwright
 
-from src.utils.helpers import project_root, reviews_data_dir, shein_json_path
+from src.utils.helpers import project_root, reviews_data_dir
 
 
-CONFIG_PATH = project_root() / "src" / "config" / "scraping_config.json"
+CONFIG_PATH = project_root() / "src" / "config" / "scraping_config_full.json"
 REVIEWS_DIR = reviews_data_dir()
-SHEIN_JSON_PATH = shein_json_path()
 _LEGACY_REVIEWS_DIR = project_root() / "reviews"
+
+
+def _input_json_path(name_or_path: str) -> Path:
+    """Merge base / leitura: absoluto mantém; relativo → ``data/reviews/``."""
+    p = Path(name_or_path)
+    return p if p.is_absolute() else (REVIEWS_DIR / p)
+
+
+def _output_json_path(name_or_path: str) -> Path:
+    """Saída do scraper: absoluto mantém; relativo → ``data/reviews/``."""
+    p = Path(name_or_path)
+    return p if p.is_absolute() else (REVIEWS_DIR / p)
 
 # Rótulos legíveis para o JSON (chave do config -> nome do pilar)
 PILLAR_LABELS: dict[str, str] = {
@@ -131,11 +143,11 @@ def _flatten_pillars_block(data: dict) -> tuple[list[dict], set[str]]:
     return entries, titles
 
 
-def load_shein_entries() -> tuple[list[dict], set[str]]:
-    """Carrega todas as entradas de `shein.json` (ou bootstrap de arquivos legados)."""
-    if SHEIN_JSON_PATH.exists():
+def load_shein_entries(shein_path: Path) -> tuple[list[dict], set[str]]:
+    """Carrega todas as entradas do JSON (ou bootstrap de arquivos legados se o arquivo não existir)."""
+    if shein_path.exists():
         try:
-            with open(SHEIN_JSON_PATH, "r", encoding="utf-8") as f:
+            with open(shein_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
         except (json.JSONDecodeError, OSError):
             return [], set()
@@ -184,7 +196,7 @@ def merge_shein_entries(
     return merged, added
 
 
-def save_shein_json(entries: list[dict]) -> None:
+def save_shein_json(entries: list[dict], shein_path: Path) -> None:
     """
     Salva agrupado por pilar:
 
@@ -198,7 +210,6 @@ def save_shein_json(entries: list[dict]) -> None:
       }
     }
     """
-    REVIEWS_DIR.mkdir(parents=True, exist_ok=True)
     by_pillar: dict[str, dict] = {}
     for e in entries:
         e = _ensure_entry(e)
@@ -223,12 +234,14 @@ def save_shein_json(entries: list[dict]) -> None:
         ordered[key] = by_pillar[key]
 
     payload = {"pillars": ordered}
-    with open(SHEIN_JSON_PATH, "w", encoding="utf-8") as f:
+    shein_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(shein_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
-def load_config():
-    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+def load_config(config_path: Path | None = None) -> dict:
+    p = config_path if config_path is not None else CONFIG_PATH
+    with open(p, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -444,6 +457,8 @@ def scrape_one_query(
     query: str,
     list_url: str,
     max_links: int,
+    input_path: Path,
+    output_path: Path,
 ) -> None:
     """Uma busca: lista links, extrai detalhes, merge e salva JSON."""
     new_entries: list[dict] = []
@@ -505,16 +520,22 @@ def scrape_one_query(
             )
             browser.close()
 
-    existing, title_keys = load_shein_entries()
+    load_from = output_path if output_path.exists() else input_path
+    existing, title_keys = load_shein_entries(load_from)
     merged, n_added = merge_shein_entries(existing, title_keys, new_entries)
-    save_shein_json(merged)
+    save_shein_json(merged, output_path)
     print(
-        f"\nSalvo: {SHEIN_JSON_PATH} ({len(merged)} reviews no total, {n_added} novos nesta rodada)"
+        f"\nSalvo: {output_path} ({len(merged)} reviews no total, {n_added} novos nesta rodada)"
     )
 
 
-def scrape():
-    config = load_config()
+def scrape(
+    input_path: Path,
+    output_path: Path,
+    *,
+    config_path: Path | None = None,
+) -> None:
+    config = load_config(config_path)
     run = config.get("scrape_run") or {}
     mode = (run.get("mode") or "test").lower()
     test = run.get("test") or {}
@@ -535,9 +556,49 @@ def scrape():
             query=query,
             list_url=list_url,
             max_links=max_links,
+            input_path=input_path,
+            output_path=output_path,
         )
 
 
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Scrape Reclame Aqui. Obrigatório: -i e -o (ambos em data/reviews/ se relativo).",
+    )
+    parser.add_argument(
+        "-i",
+        "--input",
+        required=True,
+        metavar="ARQUIVO",
+        help="JSON base em data/reviews/ (relativo); usado quando a saída ainda não existe",
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        required=True,
+        metavar="ARQUIVO",
+        help="JSON de saída em data/reviews/ (relativo)",
+    )
+    parser.add_argument(
+        "-c",
+        "--config",
+        default=None,
+        metavar="CAMINHO",
+        help="JSON de scraping (default: src/config/scraping_config_full.json); relativo à raiz do projeto",
+    )
+    args = parser.parse_args()
+    out_name = args.output
+    cfg: Path | None = None
+    if args.config:
+        cp = Path(args.config)
+        cfg = cp if cp.is_absolute() else (project_root() / cp)
+    scrape(
+        _input_json_path(args.input),
+        _output_json_path(out_name),
+        config_path=cfg,
+    )
+
+
 if __name__ == "__main__":
-    scrape()
+    main()
 
