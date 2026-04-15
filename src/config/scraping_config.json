@@ -1,0 +1,87 @@
+{
+  "company": "shein",
+  "base_url": "https://www.reclameaqui.com.br/empresa/shein/lista-reclamacoes/?busca={query}&pagina=1",
+  "scrape_run": {
+    "mode": "full",
+    "full": {
+      "max_links_per_query": 5
+    }
+  },
+  "pillars": {
+    "qualidade_produto": {
+      "enabled": true,
+      "queries": [
+        "tecido ruim",
+        "material ruim",
+        "produto com defeito",
+        "qualidade pessima",
+        "veio rasgado",
+        "acabamento ruim",
+        "tecido bom",
+        "boa qualidade",
+        "material bom",
+        "produto excelente",
+        "acabamento bom",
+        "qualidade otima"
+      ]
+    },
+    "ajuste_caimento": {
+      "enabled": true,
+      "queries": [
+        "tamanho errado",
+        "nao serviu",
+        "muito pequeno",
+        "muito grande",
+        "tabela de medidas errada",
+        "modelagem ruim",
+        "tamanho perfeito",
+        "serviu bem",
+        "caimento bom",
+        "modelagem boa",
+        "tamanho correto"
+      ]
+    },
+    "logistica_entrega": {
+      "enabled": true,
+      "queries": [
+        "atraso entrega",
+        "nao chegou",
+        "demora entrega",
+        "prazo nao cumprido",
+        "problema entrega",
+        "entrega rapida",
+        "chegou rapido",
+        "entrega no prazo",
+        "entrega eficiente"
+      ]
+    },
+    "atendimento_cliente": {
+      "enabled": true,
+      "queries": [
+        "atendimento ruim",
+        "nao respondem",
+        "suporte ruim",
+        "troca problema",
+        "estorno nao feito",
+        "nao resolvem",
+        "bom atendimento",
+        "suporte eficiente",
+        "resolveram rapido",
+        "troca facil",
+        "bom suporte"
+      ]
+    },
+    "general_collection": {
+      "enabled": true,
+      "queries": [
+        "shein",
+        "compra shein",
+        "pedido shein",
+        "experiencia shein",
+        "problema shein",
+        "avaliacao shein",
+        "reclamacao shein"
+      ]
+    }
+  }
+}

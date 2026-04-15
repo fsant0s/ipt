@@ -1,0 +1,882 @@
+[
+  {
+    "texto_original": "Lençóis de má qualidade e tamanho inadequado da Shein. Bom dia, sou compradora assidua da shein, e fiquei bastante decepcionada com minhas últimas compras. Comprei alguns lençóis de casal com elástico e qndo chegou fiquei chocada com a qualidade do material, o acabamento então horrível sem falar que nenhum deu na minha cama que é de casal normal sendo que um rasgou!!!\nAcho que vcs deveriam verificar as empresas que vcs trabalham para não perder credibilidade.\nResulmindo joguei dinheiro fora e fiquei no prejuizo.",
+    "aspectos": [
+      {
+        "aspecto_detectado": "qualidade",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.995,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O consumidor ficou chocado com a má qualidade dos lençóis."
+      },
+      {
+        "aspecto_detectado": "tamanho",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9949,
+        "pilar": "ajuste_caimento",
+        "resumo_aspecto": "Os lençóis não serviram na cama do consumidor, que é de casal normal."
+      },
+      {
+        "aspecto_detectado": "material",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9902,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O material dos lençóis foi considerado de baixa qualidade."
+      },
+      {
+        "aspecto_detectado": "acabamento",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9807,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O acabamento dos lençóis foi descrito como horrível."
+      },
+      {
+        "aspecto_detectado": "empresas",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.5501,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O consumidor sugere que a empresa verifique as empresas parceiras."
+      },
+      {
+        "aspecto_detectado": "credibilidade",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9497,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O consumidor expressou preocupação com a credibilidade da empresa."
+      },
+      {
+        "aspecto_detectado": "dinheiro",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.988,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O consumidor se sentiu como se tivesse jogado dinheiro fora."
+      }
+    ]
+  },
+  {
+    "texto_original": "Reembolso negado para roupa de academia com material diferente do anunciado e tamanho inadequado. Comprei uma roupa de academia na SHEIN nacional dia 7 de março, e como sempre a shein nacional demora muito pra enviar suas mercadorias, tanto que a internacional chegou dois dias depois que a nacional, mas enfim, a blusa chegou e não gostei do material, pois não é de acordo com o que estava descrito, na foto dizia dry fit, tenho uma blusa com esse material e nada tem a ver, sem contar que a blusa ficou muito grande em mim e fiquei insatisfeita com a compra, por ser pano de qualidade ruim e ter ficado grande, pedi reembolso e devolvi dentro do prazo estipulado pela empresa, e como no código de defesa do consumidor. E na data de hoje 27/03/2026 eles me mandam um e-mail que não haverá estorno porque não está dentro da política de devolução, sem falar qual é o desacordo com a politica que está. Quero meu dinheiro de volta pois pelo código de defesa do consumidor O consumidor tem direito de desistir de uma compra online em até 7 dias após o recebimento do produto, com reembolso integral e sem necessidade de justificativa.Direito de ArrependimentoO artigo 49 do Código de Defesa do Consumidor (CDC) garante que compras realizadas fora do estabelecimento comercial, como pela internet, telefone ou vendas domiciliares, podem ser desistidas em até 7 dias a contar do recebimento do produto ou da assinatura do contrato, sem necessidade de apresentar justificativa e sem custos adicionais para o consumidor.",
+    "aspectos": [
+      {
+        "aspecto_detectado": "material",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.994,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O material da roupa não corresponde ao que foi anunciado e é de qualidade ruim."
+      },
+      {
+        "aspecto_detectado": "tamanho",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9943,
+        "pilar": "ajuste_caimento",
+        "resumo_aspecto": "O tamanho da blusa ficou muito grande e inadequado para mim."
+      },
+      {
+        "aspecto_detectado": "modelagem",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9904,
+        "pilar": "ajuste_caimento",
+        "resumo_aspecto": "A modelagem da blusa não serviu e não atendeu às minhas expectativas."
+      },
+      {
+        "aspecto_detectado": "pano",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9903,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O pano utilizado na blusa é de qualidade ruim e não é o que foi prometido."
+      },
+      {
+        "aspecto_detectado": "estorno",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9896,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O reembolso foi negado sem justificativa clara, contrariando meus direitos."
+      },
+      {
+        "aspecto_detectado": "devolução",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.98,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "A devolução foi feita dentro do prazo, mas o estorno não foi aceito pela empresa."
+      },
+      {
+        "aspecto_detectado": "contrato",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.5282,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O contrato menciona os direitos do consumidor, mas não foi respeitado neste caso."
+      }
+    ]
+  },
+  {
+    "texto_original": "Calça diferente da comprada, má qualidade, recusa de reembolso sob alegação de uso indevido.. Comprei uma calça e chegou outra totalmente diferente da foto e ao chegar eu apenas abri o pacote e solicitei a devolução pois a calça tecido péssimo totalmente ao contrário do que eles falam propaganda enganosa. Ao solicitar o reembolso a Shein me falou que não vai ter reembolso pois a calça está como usada sendo que a calça parecia um balão ninguém usou e no mesmo dia que chegou eu já solicitei o reembolso pois não se viu e não ia servir nem para pano de chão de tão ruim que era . Ao verificar os comentários negativo eu vi que eram vários a mesma situação e agora vem alegar que não tem reembolso pelo fato da calça ter usado. A calça voltou com a etiqueta do mesmo jeito que chegou. sim você ser responsável desses vendedores poderia observar mais sobre esses comentários negativo e a forma do reembolso da mercadoria que não presta vendendo mercadoria que não condiz com a foto. Simplesmente a shein [Editado pelo Reclame Aqui] para o cliente. E eu fiquei no prejuízo de algo que não foi minha culpa .",
+    "aspectos": [
+      {
+        "aspecto_detectado": "qualidade",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9954,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "A calça tinha uma qualidade péssima, totalmente diferente do que foi anunciado."
+      },
+      {
+        "aspecto_detectado": "estorno",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9952,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "A solicitação de reembolso foi negada sob a alegação de uso indevido."
+      },
+      {
+        "aspecto_detectado": "tecido",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9944,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O tecido da calça era tão ruim que não servia nem para pano de chão."
+      },
+      {
+        "aspecto_detectado": "Shein",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9918,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A Shein não se responsabilizou pela situação e não atendeu às reclamações."
+      },
+      {
+        "aspecto_detectado": "calça",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9918,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "A calça recebida era completamente diferente da comprada e de má qualidade."
+      },
+      {
+        "aspecto_detectado": "calça",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.4713,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A calça chegou com a etiqueta intacta, mas não era a que foi comprada."
+      },
+      {
+        "aspecto_detectado": "etiqueta",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.4521,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A etiqueta da calça estava do mesmo jeito que chegou."
+      },
+      {
+        "aspecto_detectado": "mercadoria",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9905,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "A mercadoria vendida não condizia com a foto e era de baixa qualidade."
+      },
+      {
+        "aspecto_detectado": "itens",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9835,
+        "pilar": "general_collection",
+        "resumo_aspecto": "Os itens vendidos não correspondiam às expectativas e à propaganda."
+      },
+      {
+        "aspecto_detectado": "Shein",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.4524,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A Shein deveria prestar mais atenção às reclamações dos clientes."
+      }
+    ]
+  },
+  {
+    "texto_original": "Problema com parcelamento e finalização de compra no aplicativo Shein. Estava finalizando uma compra no meu aplicativo da Shein, uma compra muito grande. Não estava conseguindo parcelar, simplesmente não aparece a opção, apenas consigo marcar o cartão, não aparece pra selecionar parcelas. Apareceu um espaço pra comprar com desconto, cliquei e já apareceu que minha compra foi realizada, sem pedir confirmação do cartão nem nada. E foi a vista, uma compra enorme. E não estou conseguindo parcelar de jeito nenhum, está muito ruim o aplicativo",
+    "aspectos": [
+      {
+        "aspecto_detectado": "pagamento",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9921,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O consumidor teve problemas com a opção de parcelamento no aplicativo."
+      },
+      {
+        "aspecto_detectado": "aplicativo",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.6038,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O aplicativo é utilizado para realizar compras, mas apresenta falhas."
+      },
+      {
+        "aspecto_detectado": "parcelas",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9864,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "A opção de parcelamento não aparece, dificultando a compra."
+      },
+      {
+        "aspecto_detectado": "espaço",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.4183,
+        "pilar": "general_collection",
+        "resumo_aspecto": "Um espaço para desconto apareceu, mas causou confusão na finalização da compra."
+      },
+      {
+        "aspecto_detectado": "desconto",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.7998,
+        "pilar": "general_collection",
+        "resumo_aspecto": "Houve uma opção de desconto, mas não ajudou na finalização da compra."
+      },
+      {
+        "aspecto_detectado": "pagamento",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.6312,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O pagamento foi realizado, mas sem a confirmação desejada."
+      },
+      {
+        "aspecto_detectado": "compra",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.8661,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O consumidor fez uma compra grande, mas enfrentou problemas no processo."
+      },
+      {
+        "aspecto_detectado": "aplicativo",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.991,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O aplicativo é considerado muito ruim devido às falhas na finalização da compra."
+      }
+    ]
+  },
+  {
+    "texto_original": "Dificuldade extrema para devolução de produtos e acesso a informações no site da Shein. Solicitei devolução de 4 produtos após muita dificuldade de encontrar onde e como fazer o pedido de devolução. Em outros sites ao pedir devolução o código de evolução é emitido no mesmo momento. Na Shein não diz exatamente quando será emitido e o cliente sem tempo fica sendo obrigado a olhar o site sempre para saber se o código já saiu. No sábado dia 11/4/26 consegui finalmente ter acesso aos códigos de devolução e fui hoje 13/04/26 aos correios devolver os produtos, mas quando lá cheguei me avisaram que não era através dos Correios. Imediatamente, tentei voltar ao site da Shein tanto pelo celular quanto pelo site no PC e ao clicar em devolução/reembolso só aparece 1 devolução muito antiga e os novos produtos a serem devolvidos não aparecem mais pra eu saber onde os devolvo. Também quando clico em meus pedidos não aparecem minhas compras recentes nem no app, nem no PC. Troquei então de conta do google e mesmo assim não funcionou. Parece que é uma política da empresa dificultar em muito o acesso às informações porque aconteceu todas as vezes que entrei no site. As consequências imediatas são além da irritabilidade por nunca achar as informações necessárias , a enorme perda de tempo e a perda do prazo de devolução, porque não é possível que um site seja tão ruim. Cheguei a recorrer ao Gemini, chatgpt5 e outras ferramentas de IA para tentar ajuda. Nunca vi um sie tão instável e tão ruim com letras pequenas que não tem separação precisa dos itens a venda, uma misturada só, poluição visual pura, que confunde o consumidor. Não consigo dar detalhes do dia da compra e numero do pedido porque não os encontro no site. Tentei fazer contato pelo próprio site, mas ao clicar no símbolo de contato a página é dirigida para outras áreas. Eu estou com esse grande problema porque não sei onde devolver os produtos, porque não consigo acessar as informações no site.",
+    "aspectos": [
+      {
+        "aspecto_detectado": "devolução",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9964,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O consumidor enfrentou extrema dificuldade para realizar a devolução dos produtos."
+      },
+      {
+        "aspecto_detectado": "produtos",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9797,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O cliente teve problemas com a devolução de vários produtos."
+      },
+      {
+        "aspecto_detectado": "código",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9538,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O código de devolução não foi emitido de forma clara e imediata."
+      },
+      {
+        "aspecto_detectado": "Correios",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.7267,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O cliente foi informado que a devolução não poderia ser feita pelos Correios."
+      },
+      {
+        "aspecto_detectado": "celular",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.5402,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O consumidor tentou acessar o site tanto pelo celular quanto pelo PC."
+      },
+      {
+        "aspecto_detectado": "contas do Google",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.985,
+        "pilar": "general_collection",
+        "resumo_aspecto": "Trocar de conta do Google não resolveu os problemas de acesso."
+      },
+      {
+        "aspecto_detectado": "informações",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9932,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O acesso às informações no site foi extremamente difícil e frustrante."
+      },
+      {
+        "aspecto_detectado": "site",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.874,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O site da Shein foi considerado muito ruim e instável."
+      },
+      {
+        "aspecto_detectado": "texto",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.995,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O cliente expressou insatisfação com a falta de clareza nas informações do site."
+      },
+      {
+        "aspecto_detectado": "compras",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.796,
+        "pilar": "general_collection",
+        "resumo_aspecto": "As compras recentes não estavam visíveis no app nem no PC."
+      },
+      {
+        "aspecto_detectado": "devolução",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9916,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O cliente perdeu o prazo de devolução devido à dificuldade de acesso às informações."
+      }
+    ]
+  },
+  {
+    "texto_original": "Não consigo trocar maiô que não serviu e empresa não oferece canais de contato para devolução ou troca.. Comprei 2 maios para minha neta no tamanho que ela usa, porém o produto é muito pequeno e não serviu!\nQdo comprei estava escrito que podia devolver, agora não consigo devolver,\nNão tem telefone para contatar, não tem email nenhum contato\nQuero TROCAR o produto por um número maior ou devolução do meu dinheiro !",
+    "aspectos": [
+      {
+        "aspecto_detectado": "maiô",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9926,
+        "pilar": "ajuste_caimento",
+        "resumo_aspecto": "O maiô que comprei é muito pequeno e não serviu."
+      },
+      {
+        "aspecto_detectado": "empresa",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9898,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "A empresa não oferece canais de contato para devolução ou troca."
+      },
+      {
+        "aspecto_detectado": "caimento",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9163,
+        "pilar": "ajuste_caimento",
+        "resumo_aspecto": "O produto não se ajustou ao tamanho esperado."
+      },
+      {
+        "aspecto_detectado": "telefone",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9943,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "Não há telefone para contatar a empresa."
+      },
+      {
+        "aspecto_detectado": "email",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9944,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "Não há email para contato com a empresa."
+      },
+      {
+        "aspecto_detectado": "tamanho",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.6693,
+        "pilar": "ajuste_caimento",
+        "resumo_aspecto": "O tamanho do maiô não corresponde ao que foi comprado."
+      }
+    ]
+  },
+  {
+    "texto_original": "atraso. poxa, fiz uma compra dia 21 de março e até agora nao chegou, mais de 3 semanas esperando",
+    "aspectos": [
+      {
+        "aspecto_detectado": "Atraso",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9868,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O cliente está insatisfeito com o atraso na entrega do produto."
+      },
+      {
+        "aspecto_detectado": "Esperando",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.985,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O cliente expressa frustração por estar esperando há mais de 3 semanas."
+      }
+    ]
+  },
+  {
+    "texto_original": "Loja Dany Cosmetic na Shein vende hidratante falsificado da marca O Boticário, causando transtorno e risco à saúde.. Fiz uma compra no mes de janeiro através da plataforma shein, na loja dany cosmetic, comprei um hidratante supostamente do boticário, de algodão doce, achei o cheiro estranho, porém eu nunca havia comprado o original, então achei que era original. Quando foi em março, comprei novamente e exatamente na mesma loja um hidratante deleite chocolatudo tambem do boticário, assim que fiz a compra na shein, eu havia comprado umas roupas na mesma compra, as roupas ja estavam prontas pra ser enviadas e o tal hidratante chocolatudo constando como sem estoque. Aí passou quase uma semana e foi enviado, o que ja me causou transtorno por atrasar as outras compras. Beleza, quando chegou a compra que eu abri a caixa com o hidratante eu me assustou, pois o rótulo estava colado totalmente torto, isso já me acendeu um alerta, abri o hidratante e o cheiro bem diferente do que eu comprei na loja do boticário, pois esse chocolatudo eu ja comprei varias vezes na loja física do boticário. Nisso eu olhei o meu frasco original e vi que o lote e validade sao impressos na embalagem em cima na parte traseira e o que eu comprei da Dany cosmétic esta ilegível, no rótulo traseiro na parte de baixo. O rótulo do hidratante original é brilhante, o do falsificado vendida pela Dany cosmétic é fosco, estava mal colado e torto. O produto é claramente falsificado e depois disso percebi que o que comprei em janeiro da mesma loja tambem através da shein também é. Quero meu dinheiro de volta dos dois hidratantes, a loja com certeza tem uma produção de fundo de quintal, produzindo hidratante falso com quem [Editado pelo Reclame Aqui] sabe que produtos, isso é [Editado pelo Reclame Aqui] gravíssimo, principalmente por colocar a pele e a saúde dos clientes em risco. Eu tenho o hidratante chocolatudo falso vendido pela Dany cosmétic e tenho o original que eu comprei na loja física do boticário pra comparar. Eu já reclamei na própria shein, e se não resolver aqui no Reclame aqui denunciarei a loja na anvisa pra que essa fabrica clandestina seja fechada e os responsáveis presos. Não quero apenas meu dinheiro, quero que a loja pare de enganar. Até porque alguém pode pensar que eu fui atrás de vantagem e preço, mas nao foi o caso. Ambos os hidratantes eu comprei na shein porque nao achei na loja física do boticário, e na shein estava ainda mais caro que no boticário. Eu comprei algo caro, falsificado e coloquei minha pele em risco no caso do algodão doce e agora estou com o chocolatudo aqui falsificado e com cheiro diferente do original. Isso é [Editado pelo Reclame Aqui], shein. Averiguem imediatamente a loja Dany cosmétic",
+    "aspectos": [
+      {
+        "aspecto_detectado": "hidratante",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9957,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O hidratante comprado é falsificado e causa risco à saúde."
+      },
+      {
+        "aspecto_detectado": "cheiro",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.5816,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O cheiro do hidratante é estranho e diferente do original."
+      },
+      {
+        "aspecto_detectado": "hidratante",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.7237,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O hidratante é supostamente do Boticário, mas não é original."
+      },
+      {
+        "aspecto_detectado": "hidratante chocolatudo",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9269,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O hidratante chocolatudo é claramente falsificado."
+      },
+      {
+        "aspecto_detectado": "enviado",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9945,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O envio do hidratante atrasou as outras compras."
+      },
+      {
+        "aspecto_detectado": "hidratante",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.885,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O hidratante foi comprado, mas não corresponde ao esperado."
+      },
+      {
+        "aspecto_detectado": "rótulo",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9216,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O rótulo do hidratante estava colado torto e ilegível."
+      },
+      {
+        "aspecto_detectado": "chocolate",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.7126,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O chocolate é mencionado, mas não é o foco da crítica."
+      },
+      {
+        "aspecto_detectado": "embalagem",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.8997,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "A embalagem do hidratante falsificado é de qualidade inferior."
+      },
+      {
+        "aspecto_detectado": "rótulo",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.927,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O rótulo do hidratante original é brilhante, ao contrário do falsificado."
+      },
+      {
+        "aspecto_detectado": "hidratantes",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9279,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "Os hidratantes comprados não são autênticos."
+      },
+      {
+        "aspecto_detectado": "loja",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9555,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A loja Dany Cosmetic vende produtos falsificados."
+      },
+      {
+        "aspecto_detectado": "pele",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9943,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O uso do hidratante falsificado pode prejudicar a pele."
+      },
+      {
+        "aspecto_detectado": "hidratante chocolatudo",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.4385,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O hidratante chocolatudo é um produto que já foi comprado várias vezes."
+      },
+      {
+        "aspecto_detectado": "Shein",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.8652,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "A experiência de compra na Shein foi insatisfatória devido aos problemas."
+      },
+      {
+        "aspecto_detectado": "fábrica",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9861,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A fábrica do produto não é confiável, pois vende falsificações."
+      },
+      {
+        "aspecto_detectado": "pechincha",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.5925,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O preço pode ter sido uma pechincha, mas a qualidade é duvidosa."
+      },
+      {
+        "aspecto_detectado": "algodão doce",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.988,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O cheiro de algodão doce do hidratante não é agradável."
+      },
+      {
+        "aspecto_detectado": "chocolate",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9782,
+        "pilar": "qualidade_produto",
+        "resumo_aspecto": "O chocolate mencionado não corresponde ao sabor esperado."
+      }
+    ]
+  },
+  {
+    "texto_original": "Atraso na entrega, impossibilidade de cancelamento e falta de retorno da empresa. Fiz uma compra no dia 30/11/2025 que chegaria ate dia 18/12/25. Esta compra ainda nao chegou. Tentei contato e so fui comunicado que atrasaria. Hoje o que diz no rastreio é que: O fornecedor de logistica esta entregando seu pacote o mais rapido possivel, seja paciente e agurade a proxima atualizaçao do rastreamento.\nEnfim quando fui avisada tentei cancelar pois eram produtos para presentear no natal, fui avisada que nao podia.\nNao consigo retorno da empresa e agora quero meus produtos ou meu valor devolvido.\nAgradeço desde ja e espero uma soluçao.\nNumero dos pedidos: ***** / ***** / ***** / *****\nAtt\nRegina",
+    "aspectos": [
+      {
+        "aspecto_detectado": "entrega",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9961,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "Houve um atraso na entrega do pedido, que ainda não chegou."
+      },
+      {
+        "aspecto_detectado": "compra",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.9017,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A compra foi realizada no dia 30/11/2025."
+      },
+      {
+        "aspecto_detectado": "compra",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9556,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A compra não chegou a tempo para ser um presente de Natal."
+      },
+      {
+        "aspecto_detectado": "logística",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.5083,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "A comunicação sobre a logística foi insatisfatória e não houve retorno da empresa."
+      },
+      {
+        "aspecto_detectado": "presentes",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.5962,
+        "pilar": "general_collection",
+        "resumo_aspecto": "Os produtos eram destinados a presentes de Natal."
+      },
+      {
+        "aspecto_detectado": "empresa",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9936,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "A falta de retorno da empresa gerou frustração."
+      },
+      {
+        "aspecto_detectado": "solução",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.7606,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "A consumidora espera uma solução para o problema com o pedido."
+      },
+      {
+        "aspecto_detectado": "números dos pedidos",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.3782,
+        "pilar": "general_collection",
+        "resumo_aspecto": "Os números dos pedidos foram fornecidos para referência."
+      }
+    ]
+  },
+  {
+    "texto_original": "Negativa na devolução dos valores após a devolução do produto. Devolvi o produto, nao me deram o reembolso e não respondem o motivo. Quero meu dinheiro de volta.",
+    "aspectos": [
+      {
+        "aspecto_detectado": "reembolso",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.995,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O consumidor está insatisfeito com a falta de reembolso após a devolução do produto."
+      },
+      {
+        "aspecto_detectado": "dinheiro",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.9518,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O consumidor deseja receber seu dinheiro de volta."
+      }
+    ]
+  },
+  {
+    "texto_original": "NÃO RECEBI O PRODUTO E NEM O REEMBOLSO! ATENDIMENTO DEIXA A DESEJAR. No dia 09/09/******* realizei um pedido na SHEIN - Nacional. Ao ser enviado, notei que a transportadora LOGGI quem iria entregar meu pedido. Todavia, no dia da entrega, apesar de ter usado meu endereço habitual em que SEMPRE recebo entregas de diversos aplicativos, constava como ENDEREÇO INCORRETO/NÃO LOCALIZADO. Deste dia até o dia 27/09, entrei em contato INÚMERAS VEZES com a SHEIN via aplicativo (agente de contato) e via instagram, fiz de TUDOOOO, porém não resolveram meu problema. Entrei em contato pela transportadora via e-mail mas so recebia retorno de robôs, dizendo que a loja (shein) que deveria entrar em contato quanto a correção do endereço.\n\nNO FINAL DE TUDO, não recebi minha encomenda e muito menos o meu reembolso, que apesar de constar como reembolsado até hoje (dia 09/10) não foi reembolsado ISSO PORQUE O PAGAMENTO FOI VIA PIX e o reembolso nesses casos é muito mais rapido.\n\n******* e GSHND126T00NND0",
+    "aspectos": [
+      {
+        "aspecto_detectado": "produto",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9932,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O consumidor não recebeu o produto que pediu."
+      },
+      {
+        "aspecto_detectado": "reembolso",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9927,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O reembolso não foi realizado, apesar de constar como reembolsado."
+      },
+      {
+        "aspecto_detectado": "atendimento ao cliente",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9917,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O atendimento ao cliente foi insatisfatório e não resolveu o problema."
+      },
+      {
+        "aspecto_detectado": "enviado",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.7945,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O pedido foi enviado, mas houve problemas na entrega."
+      },
+      {
+        "aspecto_detectado": "transportadora",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.4212,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "A transportadora LOGGI foi responsável pela entrega, mas não localizou o endereço."
+      },
+      {
+        "aspecto_detectado": "entrega",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9794,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "A entrega não foi realizada devido a um erro no endereço."
+      },
+      {
+        "aspecto_detectado": "SHEIN",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9114,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A loja SHEIN não resolveu o problema do cliente."
+      },
+      {
+        "aspecto_detectado": "loja",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.5832,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A loja não se comunicou adequadamente sobre a correção do endereço."
+      },
+      {
+        "aspecto_detectado": "pedido",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9946,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O cliente não recebeu o pedido que fez."
+      },
+      {
+        "aspecto_detectado": "pagamento",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.6266,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O pagamento foi feito via PIX, que é um método rápido."
+      },
+      {
+        "aspecto_detectado": "reembolsos",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.9902,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O cliente acredita que o reembolso deveria ser mais rápido pelo método de pagamento utilizado."
+      }
+    ]
+  },
+  {
+    "texto_original": "Vendedor SHEIN com dificuldade de envio devido a descontinuação da transportadora Sequoia e falta de pontos de coleta. Sou vendedor na SHEIN e dia 23/03 segunda-feira recebemos uma notificação de que a transportadora SEQUOIA seria descontinuada e que teria que enviar todos os pacotes até o dia 24/03, todas nossas etiquetas eram sequoia pois conta do ponto proximo a loja.\npois bem, tudo bem pois dia 23 ja tinhamos embalados todos os pedido do fim de semana e fomos enviar no proprio dia 23 na segunda, para nossa surpresa o ponto de coleta ja estava desabilidado para enviar sequoia, Pedi para o rapaz da coleta tirar uma foto com a coleta desabilitada (segue o PRINT).\nlevamos em outro ponto que conheciamos que coletava Sequoia e aconteceu o mesmo;\nenvamos e contatamos o suporte Shein pelo Chat, que por sinal não da suporte a ninguem!\nAtendente informou que só tinha 4 pontos aberto em toda região de São paulo, os endereços entra todos a mais de 15KM outros 45KM.\nderam a certeza de que conseguiriamos levar na *****, 15km daqui fomos até la, e novamente DESABILITADA!\nEstamos com problema e ninguem consegue resolver, TODOS OS DIAS desde segunda 23 entramos em contato com chat e os atendentes informam que passaram para equipe interna e esta aguardando retorno a hoje é o 4 dia e acabado de falar com a atendente novamente que me pediu para retornar novamente pois nao tinha retorno ainda!??\nComo se nao bastasse estão no punindo com atraso da entrega! \"atraso na entrega\" a proposito abrimos contestação mas estão negando.\nOu seja estão nos prejudicando de todo jeito, com multas notificação, atraso, multas, atendentes não resolvem, sempre temos que explicar TUDO DE NOVO.\nestamos cansados de aguardar uma solução! nós como loja sempre temos que cumprir os prazos da Shein para nao ser punido, trabalhamos duro para isso.\nprecisamos de SUPORTE pois a culpa é exclusiva da logistica SHEIN.",
+    "aspectos": [
+      {
+        "aspecto_detectado": "envio",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9923,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O vendedor enfrentou dificuldades com o envio devido à descontinuação da transportadora."
+      },
+      {
+        "aspecto_detectado": "coletor",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.593,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O coletor foi mencionado, mas não teve um impacto claro na experiência."
+      },
+      {
+        "aspecto_detectado": "suporte da SHEIN",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.8762,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O suporte da SHEIN não conseguiu ajudar e não ofereceu suporte adequado."
+      },
+      {
+        "aspecto_detectado": "atendente",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9643,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O atendente não resolveu o problema e pediu para entrar em contato novamente."
+      },
+      {
+        "aspecto_detectado": "chat",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.7864,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O chat foi utilizado para contatar o suporte, mas não trouxe soluções."
+      },
+      {
+        "aspecto_detectado": "atendentes",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.8875,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "Os atendentes informaram que o problema foi passado para a equipe interna, mas sem retorno."
+      },
+      {
+        "aspecto_detectado": "entrega",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9928,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "Houve atraso na entrega, o que gerou frustração."
+      },
+      {
+        "aspecto_detectado": "espera",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9639,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O consumidor está esperando uma resposta há vários dias sem sucesso."
+      },
+      {
+        "aspecto_detectado": "SHEIN",
+        "sentimento": "positivo",
+        "confiança_modelo": 0.685,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O vendedor é parte da SHEIN, mas a experiência com o suporte foi negativa."
+      },
+      {
+        "aspecto_detectado": "logística",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.8943,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "A logística foi ineficiente, com poucos pontos de coleta disponíveis."
+      }
+    ]
+  },
+  {
+    "texto_original": "Compra de camisa no App Shein com tamanho inadequado e política de troca restritiva, contrariando o CDC.. No dia 05 de Abril de 2026 fiz uma compra de uma camisa no App da Shein, segui a tabela de tamanhos fornecidos no anúncio para saber qual o tamanho da camisa que eu deveria comprar, mas de nada adianta, pois mesmo seguindo a tabela de tamanho fornecido a camisa ficou extremamente pequena, entrei no app para pedir a troca de tamanho e me deparo com a surpresa da política de troca que não permite trocar oi \"DEVOLVER O PRODUTO \", fugindo totalmente do que o CDC fala a respeito de compras feitas por plataformas digitais.\n\nPara uma primeira experiência comprando no App, fiquei frustrado e decepcionado, não pelo valor perdido, mas com a falta de compromisso com o cliente.",
+    "aspectos": [
+      {
+        "aspecto_detectado": "tamanho",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9893,
+        "pilar": "ajuste_caimento",
+        "resumo_aspecto": "O tamanho da camisa ficou extremamente pequeno, mesmo seguindo a tabela de tamanhos."
+      },
+      {
+        "aspecto_detectado": "política de troca",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9882,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "A política de troca é restritiva e não permite a devolução do produto."
+      },
+      {
+        "aspecto_detectado": "tabela de tamanhos",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9271,
+        "pilar": "ajuste_caimento",
+        "resumo_aspecto": "Seguir a tabela de tamanhos não ajudou, pois a camisa ainda ficou pequena."
+      },
+      {
+        "aspecto_detectado": "valor perdido",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9949,
+        "pilar": "general_collection",
+        "resumo_aspecto": "O consumidor ficou frustrado não pelo valor perdido, mas pela falta de compromisso com o cliente."
+      }
+    ]
+  },
+  {
+    "texto_original": "Produto não recebido e falsidade na prova de entrega pela transportadora IMile, com descaso da Shein.. Fiz uma compra na Shein e a transportadora que faria a entrega seria a Imile. Eles alegam que o produto foi entregue, porém eu não recebi nada. As provas de entrega são [Editado pelo Reclame Aqui].\nNem a Shein nem a transportadora resolvem o meu problema.. Não consigo nem o reembolso nem o meu pedido.\nÉ muito frustante ter que brigar por algo que pagamos e não recebemos.\nImile, [Editado pelo Reclame Aqui] serviço, [Editado pelo Reclame Aqui] atendimento.\nNão comprei mais na Shein, nem em nenhum outro lugar que utilizem a empresa Imile como parceira para entregas.",
+    "aspectos": [
+      {
+        "aspecto_detectado": "transportadora",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.6258,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "A transportadora IMile não entregou o produto e falsificou a prova de entrega."
+      },
+      {
+        "aspecto_detectado": "entrega",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.5038,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O produto não foi entregue conforme alegado pela transportadora."
+      },
+      {
+        "aspecto_detectado": "entregue",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9887,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "O cliente não recebeu o produto que foi supostamente entregue."
+      },
+      {
+        "aspecto_detectado": "Shein",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9879,
+        "pilar": "general_collection",
+        "resumo_aspecto": "A Shein não resolveu o problema do cliente em relação à entrega."
+      },
+      {
+        "aspecto_detectado": "transportadora",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9897,
+        "pilar": "logistica_entrega",
+        "resumo_aspecto": "A transportadora IMile não está ajudando a resolver a situação."
+      },
+      {
+        "aspecto_detectado": "estorno",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9935,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O cliente não consegue obter o reembolso do pedido."
+      },
+      {
+        "aspecto_detectado": "serviço",
+        "sentimento": "neutro",
+        "confiança_modelo": 0.4617,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O serviço prestado não foi satisfatório, mas não foi especificamente criticado."
+      },
+      {
+        "aspecto_detectado": "atendimento ao cliente",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.4106,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O atendimento ao cliente não está ajudando a resolver o problema do cliente."
+      }
+    ]
+  },
+  {
+    "texto_original": "Shein: Devvolução de vestidos efetuada há 3 meses e sem reembolso ou resposta. Compras com a SHEIN vestidos a 3 meses devolvidos e não reembolsaram estou nessa espera a 3 meses sem resposta.",
+    "aspectos": [
+      {
+        "aspecto_detectado": "Vestido",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9951,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O consumidor está insatisfeito com a devolução dos vestidos, que não foi processada."
+      },
+      {
+        "aspecto_detectado": "espera",
+        "sentimento": "negativo",
+        "confiança_modelo": 0.9899,
+        "pilar": "atendimento_cliente",
+        "resumo_aspecto": "O consumidor expressa frustração por estar esperando há 3 meses sem resposta."
+      }
+    ]
+  }
+]

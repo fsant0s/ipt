@@ -1,0 +1,20 @@
+# Secrets — nunca committar
+.env
+*.env
+
+# macOS
+.DS_Store
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Checkpoints do modelo (arquivos grandes de peso)
+checkpoints/
